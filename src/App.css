@@ -1,0 +1,16 @@
+* {
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.logo {
+  padding: 15px;
+  background: rgb(32, 32, 32);
+}
+
+.credit {
+  color: white;
+}
