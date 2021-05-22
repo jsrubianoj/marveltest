@@ -1,8 +1,9 @@
-import React from "react";
+import React, { PureComponent } from 'react'
 
-const Header = () => {
-  return (
-    <div>
+export default class Header extends PureComponent {
+  render() {
+    return (
+      <div>
       <div className="logo">
         <svg width="130" height="52" xmlns="http://www.w3.org/2000/svg">
           <rect fill="#EC1D24" width="200%" height="200%"></rect>
@@ -17,10 +18,9 @@ const Header = () => {
           ></path>
         </svg>
         <h3 className="subtitle">The final Viewer</h3>
-        <h5 className="credit">"Data provided by Marvel. © 2021 Marvel"</h5>
       </div>
     </div>
-  );
-};
+    )
+  }
+}
 
-export default Header;

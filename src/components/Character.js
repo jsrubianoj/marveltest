@@ -1,28 +1,27 @@
 import React from 'react'
 
 const Character = (props) => {
-
-  const { character } = props;
+  const {char} = props
 
   return (
     <div>
-      <div className="character-card">
-      <div>
+      <div className="col">
+      <div
+        className="card mx-auto"
+        style={{ width: "18rem", marginTop: "10px" }}
+      >
         <img
-          className="character-img"
-          src={character.sprites.front_default}
-          alt={character.name}
+          className="card-img"
+          src={`${char.thumbnail.path}.${char.thumbnail.extension}`}
+          alt={char.id}
+          style={{ width: "262px", height: "262px" }}
         />
-      </div>
-      <div className="card-body">
-        <div className="card-top">
-          <h3>{character.name}</h3>
-          <div># {character.id}</div>
-        </div>
-        <div className="card-bottom">
-          <div className="card-description">
-            {character.description}
-          </div>
+        <div className="card-body">
+          <h5 className="card-title">{char.name}</h5>
+          <p className="card-text fs-6">{char.description}</p>
+          <a href="#" className="btn btn-primary">
+            Details
+          </a>
         </div>
       </div>
     </div>
