@@ -4,11 +4,15 @@
 
 .App {
   text-align: center;
+  background-color: #020d2e;
+  background-image: url("https://www.transparenttextures.com/patterns/rubber-grip.png");
 }
 
 .logo {
   padding: 15px;
   background: rgb(32, 32, 32);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .credit,
@@ -16,10 +20,16 @@
   color: white;
 }
 
+.card {
+  background-color: #11121a;
+  background-image: url("https://www.transparenttextures.com/patterns/light-aluminum.png");
+}
+
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background: rgb(32, 32, 32);
+  margin-top: 3rem;
 }
 
 footer.footer .social-link {

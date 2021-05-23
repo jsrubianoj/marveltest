@@ -3,7 +3,6 @@ import axios from "axios";
 import "./App.css";
 import Header from "./components/Header";
 import CharacterGrid from "./components/CharacterGrid";
-import { getCharacters, getCharacterData } from "./api";
 import Footer from "./components/Footer";
 
 function App() {
@@ -29,6 +28,8 @@ function App() {
       })
       .catch((error) => console.log(error));
   }, [page]);
+
+  
 
   return (
     <div className="App">
