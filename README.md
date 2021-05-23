@@ -4,6 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-In the project directory, you can fine the code used to create components and structure the whole app. Last updated on 23/05/2021. 
+In the project directory, you can fine the code used to create components and structure the whole app. The deployed project can be found here: https://marveltest-jsrubianoj.vercel.app/ Last updated on 23/05/2021. 
 
 
