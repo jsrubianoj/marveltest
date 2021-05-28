@@ -47,7 +47,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-muted small mb-0">
-            Copyright &copy; Sebastián Rubiano 2021. Eskuad Test.
+            Copyright &copy; Sebastián Rubiano 2021.
           </p>
           <p className="text-muted small mb-0">
             Data provided by Marvel. © 2021 Marvel
