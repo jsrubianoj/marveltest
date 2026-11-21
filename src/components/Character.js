@@ -25,6 +25,10 @@ const Character = (props) => {
     </OverlayTrigger>
   );
 
+  const imageUrl = char?.thumbnail?.path && char?.thumbnail?.extension
+    ? `${char.thumbnail.path}.${char.thumbnail.extension}`.replace(/^http:\/\//i, "https://")
+    : "https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg";
+
   return (
     <div>
       <div className="col">
@@ -34,13 +38,14 @@ const Character = (props) => {
         >
           <img
             className="card-img mx-auto"
-            src={`${char.thumbnail.path}.${char.thumbnail.extension}`}
-            alt={char.id}
+            src={imageUrl}
+            alt={char.name || char.id}
             style={{
               width: "262px",
               height: "262px",
               margin: "8px",
               borderRadius: "10px",
+              objectFit: "cover"
             }}
           />
           <div className="card-body">
